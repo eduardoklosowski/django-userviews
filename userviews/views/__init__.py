@@ -4,13 +4,15 @@
 # License: MIT (see LICENSE for details)
 #
 
-from .detail import UserDetailView
-from .edit import UserCreateView, UserUpdateView, UserDeleteView
+from .detail import UserDetailView, SharedUserDetailView
+from .edit import (UserCreateView, UserUpdateView, UserDeleteView,
+                   SharedUserCreateView, SharedUserUpdateView, SharedUserDeleteView)
 from .list import UserListView
 
 
 __all__ = [
-    'UserDetailView',
+    'UserDetailView', 'SharedUserDetailView'
     'UserCreateView', 'UserUpdateView', 'UserDeleteView',
+    'SharedUserCreateView', 'SharedUserUpdateView', 'SharedUserDeleteView',
     'UserListView',
 ]
